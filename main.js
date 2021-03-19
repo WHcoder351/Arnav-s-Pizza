@@ -10,10 +10,10 @@ pizzas.sort();
     document.getElementById("menu_list").innerHTML = Hdat;
 }
 function add_item(){
-    Hdat;
-    item = document.getElementById("add_item").value;
+    var Hdat;
+    var item = document.getElementById("add_item").value;
     pizzas.push(item);
-    pizzas.sort()
+    pizzas.sort();
     Hdat = "<section class = 'cards'> "
     for(var i=0;i<pizzas;i++){
         Hdat = Hdat+"<div class = 'card' >" + "<img src = 'images/pizzaImg.png/>' " + pizzas[i]+"</div>" 
