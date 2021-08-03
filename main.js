@@ -15,8 +15,8 @@ function add_item(){
     pizzas.push(item);
     pizzas.sort();
     Hdat = "<section class = 'cards'> "
-    for(var i=0;i<pizzas;i++){
-        Hdat = Hdat+"<div class = 'card' >" + "<img src = 'images/pizzaImg.png/>' " + pizzas[i]+"</div>" 
+    for(var i=0;i<pizzas.length;i++){
+        Hdat = Hdat+'<div class = "card" >' + '<img src = "images/pizzaImg.png"/> ' + pizzas[i]+'</div>' 
     }
     Hdat = Hdat+"</section>"
     document.getElementById("display_addmenu").innerHTML = Hdat;
